@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		E7F9119720B2A565001CD318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F9119620B2A565001CD318 /* AppDelegate.swift */; };
-		E7F9119920B2A565001CD318 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F9119820B2A565001CD318 /* ViewController.swift */; };
 		E7F9119C20B2A565001CD318 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F9119A20B2A565001CD318 /* Main.storyboard */; };
 		E7F9119E20B2A566001CD318 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F9119D20B2A566001CD318 /* Assets.xcassets */; };
 		E7F911A120B2A566001CD318 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7F9119F20B2A566001CD318 /* LaunchScreen.storyboard */; };
+		E7F911AE20B2A64A001CD318 /* DevelopersCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F911AD20B2A64A001CD318 /* DevelopersCardsViewController.swift */; };
+		E7F911B120B2A697001CD318 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F911B020B2A697001CD318 /* CardsView.swift */; };
+		E7F911B420B2A6EE001CD318 /* UIView+Xib.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F911B320B2A6EE001CD318 /* UIView+Xib.swift */; };
+		E7F911B620B2A7B1001CD318 /* CardsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F911B520B2A7B1001CD318 /* CardsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7F9119320B2A565001CD318 /* TinderDeveloper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderDeveloper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F9119620B2A565001CD318 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E7F9119820B2A565001CD318 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E7F9119B20B2A565001CD318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E7F9119D20B2A566001CD318 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7F911A020B2A566001CD318 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7F911A220B2A566001CD318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7F911AD20B2A64A001CD318 /* DevelopersCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersCardsViewController.swift; sourceTree = "<group>"; };
+		E7F911B020B2A697001CD318 /* CardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
+		E7F911B320B2A6EE001CD318 /* UIView+Xib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Xib.swift"; sourceTree = "<group>"; };
+		E7F911B520B2A7B1001CD318 /* CardsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,65 @@
 		E7F9119520B2A565001CD318 /* TinderDeveloper */ = {
 			isa = PBXGroup;
 			children = (
+				E7F911AA20B2A5BF001CD318 /* Resources */,
+				E7F911A820B2A5B3001CD318 /* Sources */,
+			);
+			path = TinderDeveloper;
+			sourceTree = "<group>";
+		};
+		E7F911A820B2A5B3001CD318 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				E7F911B220B2A6D9001CD318 /* Extensions */,
+				E7F911AF20B2A664001CD318 /* Views */,
+				E7F911AB20B2A5CA001CD318 /* Controllers */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		E7F911AA20B2A5BF001CD318 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				E7F9119620B2A565001CD318 /* AppDelegate.swift */,
-				E7F9119820B2A565001CD318 /* ViewController.swift */,
 				E7F9119A20B2A565001CD318 /* Main.storyboard */,
 				E7F9119D20B2A566001CD318 /* Assets.xcassets */,
 				E7F9119F20B2A566001CD318 /* LaunchScreen.storyboard */,
 				E7F911A220B2A566001CD318 /* Info.plist */,
 			);
-			path = TinderDeveloper;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E7F911AB20B2A5CA001CD318 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E7F911AC20B2A627001CD318 /* DevelopersCards */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E7F911AC20B2A627001CD318 /* DevelopersCards */ = {
+			isa = PBXGroup;
+			children = (
+				E7F911AD20B2A64A001CD318 /* DevelopersCardsViewController.swift */,
+			);
+			path = DevelopersCards;
+			sourceTree = "<group>";
+		};
+		E7F911AF20B2A664001CD318 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7F911B020B2A697001CD318 /* CardsView.swift */,
+				E7F911B520B2A7B1001CD318 /* CardsView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E7F911B220B2A6D9001CD318 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E7F911B320B2A6EE001CD318 /* UIView+Xib.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +181,7 @@
 			files = (
 				E7F911A120B2A566001CD318 /* LaunchScreen.storyboard in Resources */,
 				E7F9119E20B2A566001CD318 /* Assets.xcassets in Resources */,
+				E7F911B620B2A7B1001CD318 /* CardsView.xib in Resources */,
 				E7F9119C20B2A565001CD318 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,8 +193,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7F9119920B2A565001CD318 /* ViewController.swift in Sources */,
+				E7F911B120B2A697001CD318 /* CardsView.swift in Sources */,
 				E7F9119720B2A565001CD318 /* AppDelegate.swift in Sources */,
+				E7F911B420B2A6EE001CD318 /* UIView+Xib.swift in Sources */,
+				E7F911AE20B2A64A001CD318 /* DevelopersCardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V9T4V5WJRY;
-				INFOPLIST_FILE = TinderDeveloper/Info.plist;
+				INFOPLIST_FILE = TinderDeveloper/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = V9T4V5WJRY;
-				INFOPLIST_FILE = TinderDeveloper/Info.plist;
+				INFOPLIST_FILE = TinderDeveloper/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
