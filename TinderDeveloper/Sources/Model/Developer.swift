@@ -10,7 +10,7 @@ import Foundation
 
 internal final class Developer {
     
-    enum Gender {
+    enum Gender: String {
         
         case male
         case female

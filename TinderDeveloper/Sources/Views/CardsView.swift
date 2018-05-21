@@ -9,10 +9,22 @@
 import UIKit
 
 internal class CardsView: UIView {
+    
+    var viewModel: DeveloperCardsViewModelProtocol! {
+        
+        didSet {
+            print(viewModel.numberOfCards)
+            reloadData()
+        }
+    }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         self.loadFromNib(nibName: "CardsView")
+    }
+    
+    private func reloadData() {
+        
     }
 }

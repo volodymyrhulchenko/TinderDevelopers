@@ -20,6 +20,8 @@
 		E7F911BE20B2A9AC001CD318 /* DevelopersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F911BD20B2A9AC001CD318 /* DevelopersManager.swift */; };
 		E7F911C120B2A9C7001CD318 /* Developer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F911C020B2A9C7001CD318 /* Developer.swift */; };
 		E7F911C320B2A9E9001CD318 /* DevelopersList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7F911C220B2A9E9001CD318 /* DevelopersList.plist */; };
+		E7F911C520B2AD98001CD318 /* DeveloperCardsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F911C420B2AD98001CD318 /* DeveloperCardsViewModelProtocol.swift */; };
+		E7F911C720B2ADB6001CD318 /* DeveloperCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F911C620B2ADB6001CD318 /* DeveloperCardsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		E7F911BD20B2A9AC001CD318 /* DevelopersManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersManager.swift; sourceTree = "<group>"; };
 		E7F911C020B2A9C7001CD318 /* Developer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Developer.swift; sourceTree = "<group>"; };
 		E7F911C220B2A9E9001CD318 /* DevelopersList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DevelopersList.plist; sourceTree = "<group>"; };
+		E7F911C420B2AD98001CD318 /* DeveloperCardsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCardsViewModelProtocol.swift; sourceTree = "<group>"; };
+		E7F911C620B2ADB6001CD318 /* DeveloperCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCardsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +127,8 @@
 				E7F911B720B2A83A001CD318 /* DeveloperView */,
 				E7F911B020B2A697001CD318 /* CardsView.swift */,
 				E7F911B520B2A7B1001CD318 /* CardsView.xib */,
+				E7F911C420B2AD98001CD318 /* DeveloperCardsViewModelProtocol.swift */,
+				E7F911C620B2ADB6001CD318 /* DeveloperCardsViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +241,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7F911BE20B2A9AC001CD318 /* DevelopersManager.swift in Sources */,
+				E7F911C720B2ADB6001CD318 /* DeveloperCardsViewModel.swift in Sources */,
+				E7F911C520B2AD98001CD318 /* DeveloperCardsViewModelProtocol.swift in Sources */,
 				E7F911B120B2A697001CD318 /* CardsView.swift in Sources */,
 				E7F911B920B2A84E001CD318 /* DeveloperCards.swift in Sources */,
 				E7F9119720B2A565001CD318 /* AppDelegate.swift in Sources */,
