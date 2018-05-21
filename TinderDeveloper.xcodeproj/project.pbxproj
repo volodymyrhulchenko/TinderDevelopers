@@ -22,6 +22,11 @@
 		E7F911C320B2A9E9001CD318 /* DevelopersList.plist in Resources */ = {isa = PBXBuildFile; fileRef = E7F911C220B2A9E9001CD318 /* DevelopersList.plist */; };
 		E7F911C520B2AD98001CD318 /* DeveloperCardsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F911C420B2AD98001CD318 /* DeveloperCardsViewModelProtocol.swift */; };
 		E7F911C720B2ADB6001CD318 /* DeveloperCardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F911C620B2ADB6001CD318 /* DeveloperCardsViewModel.swift */; };
+		E7F911CB20B2B7DE001CD318 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F911C920B2B7DE001CD318 /* FilterViewController.swift */; };
+		E7F911CC20B2B7DE001CD318 /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F911CA20B2B7DE001CD318 /* FilterViewController.xib */; };
+		E7F911CE20B2B873001CD318 /* FilterViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F911CD20B2B873001CD318 /* FilterViewModelProtocol.swift */; };
+		E7F911D020B2B8BD001CD318 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F911CF20B2B8BD001CD318 /* FilterViewModel.swift */; };
+		E7F911D220B2BB77001CD318 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F911D120B2BB77001CD318 /* Filter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +47,11 @@
 		E7F911C220B2A9E9001CD318 /* DevelopersList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DevelopersList.plist; sourceTree = "<group>"; };
 		E7F911C420B2AD98001CD318 /* DeveloperCardsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCardsViewModelProtocol.swift; sourceTree = "<group>"; };
 		E7F911C620B2ADB6001CD318 /* DeveloperCardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperCardsViewModel.swift; sourceTree = "<group>"; };
+		E7F911C920B2B7DE001CD318 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		E7F911CA20B2B7DE001CD318 /* FilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterViewController.xib; sourceTree = "<group>"; };
+		E7F911CD20B2B873001CD318 /* FilterViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModelProtocol.swift; sourceTree = "<group>"; };
+		E7F911CF20B2B8BD001CD318 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
+		E7F911D120B2BB77001CD318 /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +180,11 @@
 		E7F911C820B2B1FE001CD318 /* Filters */ = {
 			isa = PBXGroup;
 			children = (
+				E7F911C920B2B7DE001CD318 /* FilterViewController.swift */,
+				E7F911CA20B2B7DE001CD318 /* FilterViewController.xib */,
+				E7F911CD20B2B873001CD318 /* FilterViewModelProtocol.swift */,
+				E7F911CF20B2B8BD001CD318 /* FilterViewModel.swift */,
+				E7F911D120B2BB77001CD318 /* Filter.swift */,
 			);
 			path = Filters;
 			sourceTree = "<group>";
@@ -232,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7F911CC20B2B7DE001CD318 /* FilterViewController.xib in Resources */,
 				E7F911A120B2A566001CD318 /* LaunchScreen.storyboard in Resources */,
 				E7F9119E20B2A566001CD318 /* Assets.xcassets in Resources */,
 				E7F911B620B2A7B1001CD318 /* CardsView.xib in Resources */,
@@ -252,10 +268,14 @@
 				E7F911C720B2ADB6001CD318 /* DeveloperCardsViewModel.swift in Sources */,
 				E7F911C520B2AD98001CD318 /* DeveloperCardsViewModelProtocol.swift in Sources */,
 				E7F911B120B2A697001CD318 /* CardsView.swift in Sources */,
+				E7F911CB20B2B7DE001CD318 /* FilterViewController.swift in Sources */,
 				E7F911B920B2A84E001CD318 /* DeveloperCards.swift in Sources */,
+				E7F911CE20B2B873001CD318 /* FilterViewModelProtocol.swift in Sources */,
 				E7F9119720B2A565001CD318 /* AppDelegate.swift in Sources */,
 				E7F911B420B2A6EE001CD318 /* UIView+Xib.swift in Sources */,
 				E7F911AE20B2A64A001CD318 /* DevelopersCardsViewController.swift in Sources */,
+				E7F911D220B2BB77001CD318 /* Filter.swift in Sources */,
+				E7F911D020B2B8BD001CD318 /* FilterViewModel.swift in Sources */,
 				E7F911C120B2A9C7001CD318 /* Developer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

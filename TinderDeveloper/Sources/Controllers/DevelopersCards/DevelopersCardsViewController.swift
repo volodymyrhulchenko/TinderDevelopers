@@ -13,8 +13,6 @@ internal class DevelopersCardsViewController: UIViewController {
     @IBOutlet private var cardsView: CardsView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        cardsView.viewModel = DeveloperCardsViewModel()
         
         title = "Developers"
         
@@ -24,9 +22,21 @@ internal class DevelopersCardsViewController: UIViewController {
                                                                  action: #selector(filter))
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        cardsView.viewModel = DeveloperCardsViewModel()
+    }
+    
     @objc
     private func filter() {
         
+        let navController = UINavigationController(rootViewController: FilterViewController(handler: { (filter) in
+            
+            print(filter)
+        }))
         
+        self.present(navController,
+                     animated: true)
     }
 }
