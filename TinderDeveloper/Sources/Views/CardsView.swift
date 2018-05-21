@@ -14,7 +14,5 @@ internal class CardsView: UIView {
         super.init(coder: aDecoder)
         
         self.loadFromNib(nibName: "CardsView")
-        
-        print(DevelopersManager.shared.developers)
     }
 }
