@@ -13,7 +13,6 @@ internal class CardsView: UIView {
     var viewModel: DeveloperCardsViewModelProtocol! {
         
         didSet {
-            print(viewModel.numberOfCards)
             reloadData()
         }
     }
@@ -24,7 +23,17 @@ internal class CardsView: UIView {
         self.loadFromNib(nibName: "CardsView")
     }
     
-    private func reloadData() {
+    func reloadData() {
+        
+        self.subviews.forEach {
+            
+            guard let card = $0 as? DeveloperCards
+                else {
+                    return
+            }
+            
+            card.removeFromSuperview()
+        }
         
         for index in 0..<viewModel.numberOfCards {
             

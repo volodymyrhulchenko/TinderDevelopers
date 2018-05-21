@@ -10,7 +10,10 @@ import Foundation
 
 protocol DeveloperCardsViewModelProtocol: class {
     
+    var filter: Filter? { get set }
+    
     var numberOfCards: Int { get }
+    var reloadHandler: (() -> Void)? { get set }
     
     func developer(at index: Int) -> Developer
 }

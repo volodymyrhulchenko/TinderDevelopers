@@ -20,12 +20,12 @@ internal class DevelopersCardsViewController: UIViewController {
                                                                  style: .plain,
                                                                  target: self,
                                                                  action: #selector(filter))
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         
         cardsView.viewModel = DeveloperCardsViewModel()
+        cardsView.viewModel.reloadHandler = {
+            
+            self.cardsView.reloadData()
+        }
     }
     
     @objc
@@ -33,7 +33,9 @@ internal class DevelopersCardsViewController: UIViewController {
         
         let navController = UINavigationController(rootViewController: FilterViewController(handler: { (filter) in
             
-            print(filter)
+            self.cardsView.viewModel.filter = filter
+            
+            self.navigationItem.rightBarButtonItem?.title = filter.stringValue
         }))
         
         self.present(navController,
