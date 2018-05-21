@@ -41,7 +41,7 @@ UITableViewDelegate{
     
     @objc private func close() {
         
-        
+        navigationController?.dismiss(animated: true)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
