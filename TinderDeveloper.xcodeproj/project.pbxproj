@@ -108,6 +108,7 @@
 		E7F911AB20B2A5CA001CD318 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				E7F911C820B2B1FE001CD318 /* Filters */,
 				E7F911AC20B2A627001CD318 /* DevelopersCards */,
 			);
 			path = Controllers;
@@ -164,6 +165,13 @@
 				E7F911C020B2A9C7001CD318 /* Developer.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E7F911C820B2B1FE001CD318 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Filters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

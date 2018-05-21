@@ -15,5 +15,18 @@ internal class DevelopersCardsViewController: UIViewController {
         super.viewDidLoad()
 
         cardsView.viewModel = DeveloperCardsViewModel()
+        
+        title = "Developers"
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "All developers",
+                                                                 style: .plain,
+                                                                 target: self,
+                                                                 action: #selector(filter))
+    }
+    
+    @objc
+    private func filter() {
+        
+        
     }
 }
