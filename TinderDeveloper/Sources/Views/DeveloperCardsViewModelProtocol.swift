@@ -16,4 +16,5 @@ protocol DeveloperCardsViewModelProtocol: class {
     var reloadHandler: (() -> Void)? { get set }
     
     func developer(at index: Int) -> Developer
+    func removeDeveloper(developer: Developer)
 }

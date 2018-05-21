@@ -49,4 +49,16 @@ internal final class DeveloperCardsViewModel: DeveloperCardsViewModelProtocol {
         
         return developers[index]
     }
+    
+    func removeDeveloper(developer: Developer) {
+        
+        guard let index = developers.index(where: {
+            return $0 === developer
+        }) else {
+            return
+        }
+        
+        self.developers.remove(at: index)
+        self.reloadHandler?()
+    }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-internal class CardsView: UIView {
+internal class CardsView: UIView, DeveloperCardsDelegate {
     
     var viewModel: DeveloperCardsViewModelProtocol! {
         
@@ -16,7 +16,7 @@ internal class CardsView: UIView {
             reloadData()
         }
     }
-
+    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
@@ -35,9 +35,10 @@ internal class CardsView: UIView {
             card.removeFromSuperview()
         }
         
-        for index in 0..<viewModel.numberOfCards {
+        for index in 0..<min(viewModel.numberOfCards, 3) {
             
             let card = DeveloperCards()
+            card.delegate = self
             let developer = viewModel.developer(at: index)
             card.developer = developer
             
@@ -46,12 +47,19 @@ internal class CardsView: UIView {
         }
     }
     
+    func cardRemoved(developer: Developer) {
+        
+        viewModel.removeDeveloper(developer: developer)
+    }
+    
     private func addCardView(cardView: DeveloperCards,
                              atIndex index: Int) {
         setFrame(forCardView: cardView,
                  atIndex: index)
-        insertSubview(cardView,
-                      at: index + 1)
+        
+        self.insertSubview(cardView,
+                           at: index + 1)
+        
     }
     
     private func setFrame(forCardView cardView: DeveloperCards,

@@ -8,6 +8,11 @@
 
 import UIKit
 
+protocol DeveloperCardsDelegate: class{
+    
+    func cardRemoved(developer: Developer)
+}
+
 class DeveloperCards: UIView {
     
     @IBOutlet weak var nameLabel: UILabel!
@@ -27,6 +32,8 @@ class DeveloperCards: UIView {
             genderLabel.text = currentDeveloper.gender.rawValue
         }
     }
+    
+    weak var delegate: DeveloperCardsDelegate?
     
     init() {
         super.init(frame: CGRect())
@@ -73,7 +80,11 @@ class DeveloperCards: UIView {
                                 
                 },
                                completion: { (_) in
+                                if let dev = self.developer {
+                                   self.delegate?.cardRemoved(developer: dev)
+                                }
                                 self.removeFromSuperview()
+
                 })
                 
             } else {
